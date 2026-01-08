@@ -178,7 +178,3 @@ Request/Response workflow
 
 This project demonstrates a complete machine learning lifecycle, from data preprocessing to model deployment using Flask, following industry best practices. It is suitable for real-world applications and scalable for future improvements.
 
-
-🧠 Convert this into a project presentation (PPT)
-
-Just tell me 👌
