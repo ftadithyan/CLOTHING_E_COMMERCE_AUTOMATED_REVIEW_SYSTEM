@@ -1,8 +1,8 @@
-🛍️ Women’s Clothing Reviews Dataset
+##  🛍️ Women’s Clothing Reviews Dataset
 
 📊 23,480 Customer Reviews | NLP & Classification Ready
 
-📌 Overview
+# 📌 Overview
 
 This dataset contains 23,480 real customer reviews for women’s clothing products.
 It is ideal for Sentiment Analysis, Recommendation Prediction, Rating Classification, and Exploratory Data Analysis (EDA) projects.
@@ -11,7 +11,7 @@ The dataset combines text data + categorical + numerical features, making it per
 
 📂 Dataset Size
 
-🔢 Total Records: 23,480
+# 🔢 Total Records: 23,480
 
 🧾 Data Type: Tabular (CSV)
 
