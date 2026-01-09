@@ -98,6 +98,45 @@ Logistic Regression Model
      ↓
 Sentiment Prediction
 
+## Models Considered
+#  Logistic Regression
+#  Random Forest
+ #  XGBoost 
+ Logistic Regression
+Logistic Regression is a linear classification algorithm commonly used for text and sentiment classification tasks. It works by learning a weighted combination of input features and estimating the probability of each class using a logistic (softmax) function.
+In this project, Logistic Regression is well suited because TF-IDF produces high-dimensional sparse feature vectors, and linear models handle such data efficiently. The model also includes regularization, which helps prevent overfitting when working with noisy real-world text data.
+
+ Random Forest
+Random Forest is an ensemble learning algorithm that constructs multiple decision trees and combines their outputs to make a final prediction. Each tree is trained on a random subset of the data and features, improving robustness and reducing variance.
+Random Forest is effective for structured tabular datasets and can model complex non-linear relationships. However, it is less suitable for sparse text representations like TF-IDF, as tree-based models require dense feature interactions and higher computational resources.
+
+XGBoost
+XGBoost (Extreme Gradient Boosting) is an advanced boosting algorithm that builds decision trees sequentially, where each new tree corrects the errors of previous ones. It optimizes performance by minimizing a loss function using gradient descent.
+XGBoost is known for its high predictive power and ability to capture complex patterns. However, when applied to high-dimensional sparse text data, it requires extensive tuning and computational resources, making it less practical for medium-scale NLP problems without significant performance gains.
+
+##  Why Logistic Regression ?
+
+ 1. Compatibility with TF-IDF Features
+TF-IDF creates:
+•	Very large feature space
+•	Mostly zero values (sparse matrix)
+ Logistic Regression handles sparse matrices efficiently
+ Tree-based models struggle with sparse high-dimensional input
+
+ 2. Linear Decision Boundary Suits Text Data
+Text classification problems often exhibit:
+•	Linear separability in high dimensions
+•	Strong word-to-sentiment relationships
+•	Learns weighted word importance
+•	Creates a clear linear separation between sentiment classes
+
+
+ 3. Strong Generalization
+Logistic Regression uses regularization by default:
+•	Prevents overfitting
+•	Controls coefficient magnitude
+•	Improves performance on unseen data
+
 # 🌐 API Development (Flask)
 
 A Flask REST API is created to serve predictions as JSON responses, making the model usable by:
